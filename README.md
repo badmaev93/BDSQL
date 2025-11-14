@@ -8,7 +8,9 @@
 
 Созданы таблицы bus_stops, buses и bus_routes. Для загрузки использовалась функция url()
 ```
-INSERT INTO bus_stops SELECT * FROM url('https://.../bus_stops.csv',  'CSVWithNames')  
+INSERT INTO bus_stops
+SELECT *
+FROM url('https://raw.githubusercontent.com/badmaev93/BDSQL/refs/heads/main/GTFS_routrs_study/bus_stops.csv', 'CSVWithNames');
 ```
 ---
 
